@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Offer;
 use Illuminate\Http\Request;
 
 class OfferControllers extends Controller
 {
+    public function index()
+    {
+        $offers = Offer::get();
+        return view('home', compact('offers'));
+    }
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
+    
         //
-    }
+    
 
     /**
      * Show the form for creating a new resource.
