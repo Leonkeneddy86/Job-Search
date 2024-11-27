@@ -17,14 +17,17 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory(1)->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+    // User::factory(1)->create([
+    //        'name' => 'Test User',
+    //        'email' => 'test@example.com',
+        //]); 
+    
+        Offer::factory()->create([
+            'offers' => 'hola mi gente',
+            'workstation' => 'texto prueba',
+            'state' => 'abierto',
+
         ]);
-
-        Offer::factory(1)->create();
-
-        
 
     }
 }
