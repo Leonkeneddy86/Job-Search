@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+use App\Http\Controllers\OfferControllers;
+use App\Http\Controllers\api\OfferController;
+Route::get("/Offer",[OfferController::class,"index"])->name("apihome");
