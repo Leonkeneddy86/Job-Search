@@ -4,29 +4,25 @@
 <table class="table">
     <thead>
       <tr>
+        <th scope="col">ID</th>
         <th scope="col">Trabajo</th>
-        <th scope="col">Fecha</th>
-        <th scope="col">Oferta</th>
+        <th scope="col">Descripcion</th>
         <th scope="col">Empresa</th>
-        <th scope="col">Descripción</th>
-        
+        <th scope="col">Estado</th>
+        <th scope="col">Fecha</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+      @foreach($offers as $offer)
+        <tr>
+          <td>{{ $offer->id }}</td>
+          <td>{{ $offer->offer }}</td>
+          <td>{{ $offer->description }}</td>
+          <td>{{ $offer->company }}</td>
+          <td>{{ $offer->status }}</td>
+          <td>{{ $offer->created_at }}</td>
+        </tr>
+      @endforeach
     </tbody>
   </table>
 @endsection

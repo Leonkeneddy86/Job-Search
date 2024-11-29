@@ -18,8 +18,7 @@ class OfferFactory extends Factory
     {
         return [
             //
-            'offers' => $this->faker->realText($maxNbChars = 200),
-            'updates' => $this->faker->imageUrl(),
+            
         ];
     }
 }
