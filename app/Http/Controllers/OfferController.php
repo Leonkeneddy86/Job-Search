@@ -6,7 +6,7 @@ use App\Models\Offer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
-class OfferControllers extends Controller
+class OfferController extends Controller
 {
     public function index(Request $request)
     {
