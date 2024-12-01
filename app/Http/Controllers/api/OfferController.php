@@ -12,18 +12,15 @@ class OfferController extends Controller
      */
     public function index()
     {
-        //
-
-        $Offers = Offer::all();
-        return response()->json($Offers , 200);
+        return response()->json(Offer::all(), 200);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    /*public function create() 
     {
-        //
+        // 
     }
 
     /**
@@ -35,7 +32,7 @@ class OfferController extends Controller
             'offer' => $request->offer,
             'description' => $request->description,
             'company' => $request->company,
-            'status' => $request->status
+            'status' => $request->status,
         ]);
         $offer->save();
         return response()->json($offer, 200);
@@ -46,13 +43,13 @@ class OfferController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return response()->json(Offer::find($id), 200);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    /*public function edit(string $id)
     {
         //
     }
@@ -62,7 +59,16 @@ class OfferController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $offer = Offer::find($id);
+
+        $offer->update([
+            'offer' => $request->offer,
+            'description' => $request->description,
+            'company' => $request->company,
+            'status' => $request->status,
+        ]);
+        $offer->save();
+        return response()->json($offer, 200);
     }
 
     /**
@@ -70,6 +76,6 @@ class OfferController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Offer::find($id)->delete();
     }
 }
