@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
             $table->string('offer');
-            $table->string('description');
+            $table->text('description');
             $table->string('company');
             $table->boolean('status');
             $table->timestamps();
