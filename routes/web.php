@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OfferControllers;
+use App\Http\Controllers\api\OfferController;
 
-    Route::get('/', [OfferControllers::class, 'index'])->name('home');
+Route::get('/', [OfferController::class, 'index'])->name('index');
+Route::get('/offers/{id}', [OfferController::class, 'show'])->name('show');
     
