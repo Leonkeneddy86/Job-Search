@@ -1,8 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
-
 use App\Models\Offer;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
@@ -17,18 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-     // User::factory(5)->create([
-     //'name' => 'Test User',
-     //'email' => 'test@example.com',
-     // ]);
+        User::factory()->create([
+        'name' => 'Test User',
+        'email' => 'test@example.com',
+        ]);
 
     
-     Offer::factory(10)->create([
-        'offer' => 'Almacen',
-        'company' => 'Carrefour',
-        'status' => 'abierto',
-        'description' => '45 horas Semanales, estaras explotado psicologicamente',
-        
-    ]);
+        Offer::factory(10)->create();
     }
 }
