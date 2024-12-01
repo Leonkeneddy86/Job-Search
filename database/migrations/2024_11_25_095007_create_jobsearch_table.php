@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('offer');
             $table->string('description');
             $table->string('company');
-            $table->string('status');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
