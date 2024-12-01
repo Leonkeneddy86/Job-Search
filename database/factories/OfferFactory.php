@@ -17,7 +17,10 @@ class OfferFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'offer' => $this ->faker->realText($maxNbChars = 200),
+            'description' => $this ->faker->realText($maxNbChars = 200),
+            'company' => $this->faker->company(),
+            'status' => $this->faker->boolean(),
             
         ];
     }
