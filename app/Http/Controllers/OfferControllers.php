@@ -8,8 +8,7 @@ class OfferControllers extends Controller
 {
     public function index()
     {
-        $offers = Offer::get();
-        return view('home', compact('offers'));
+        return response()->json(Offer::all(), 200);
     }
     /**
      * Display a listing of the resource.
@@ -31,7 +30,14 @@ class OfferControllers extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $offer = Offer::create([
+            'offer' => $request->offer,
+            'description' => $request->description,
+            'company' => $request->company,
+            'status' => $request->status,
+        ]);
+        $offer->save();
+        return response()->json($offer, 200);
     }
 
     /**
@@ -39,7 +45,7 @@ class OfferControllers extends Controller
      */
     public function show(string $id)
     {
-        //
+        return response()->json(Offer::find($id), 200);
     }
 
     /**
@@ -47,7 +53,7 @@ class OfferControllers extends Controller
      */
     public function edit(string $id)
     {
-        //
+        
     }
 
     /**
@@ -55,7 +61,16 @@ class OfferControllers extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $offer = Offer::find($id);
+
+        $offer->update([
+            'offer' => $request->offer,
+            'description' => $request->description,
+            'company' => $request->company,
+            'status' => $request->status,
+        ]);
+        $offer->save();
+        return response()->json($offer, 200);
     }
 
     /**
@@ -63,6 +78,6 @@ class OfferControllers extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Offer::find($id)->delete();
     }
 }
