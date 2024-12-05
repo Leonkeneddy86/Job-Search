@@ -33,8 +33,9 @@ class OfferController extends Controller
             'offer' => $request->offer,
             'description' => $request->description,
             'company' => $request->company,
-            'status' => $request->status,
+            'status' => $request->status
         ]);
+
         $offer->save();
         return response()->json($offer, 200);
     }
@@ -66,7 +67,7 @@ class OfferController extends Controller
             'offer' => $request->offer,
             'description' => $request->description,
             'company' => $request->company,
-            'status' => $request->status,
+            'status' => $request->status
         ]);
         $offer->save();
         return response()->json($offer, 200);
