@@ -10,7 +10,7 @@ class OfferController extends Controller
 {
     public function index(Request $request)
     {
-        if ($request->action === 'delete')
+        /*if ($request->action === 'delete')
         {
             $this->destroy($request->id);
             return Redirect::to(route('index'));
@@ -25,6 +25,7 @@ class OfferController extends Controller
             $this->edit($request->id, 1);
             return Redirect::to(route('index'));
         }
+            */
         $offers = Offer::all();
         return view('index', compact('offers'));
 
@@ -66,11 +67,13 @@ class OfferController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id, bool $status)
+    /*
+     public function edit(string $id, bool $status)
     {
+
         Offer::find($id)->update(['status' => $status]);
     }
-
+    */
     /**
      * Update the specified resource in storage.
      */
@@ -82,6 +85,7 @@ class OfferController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+    /*
     public function destroy(string $id)
     {
         $offer = Offer::find($id);
@@ -89,5 +93,5 @@ class OfferController extends Controller
         {
             $offer->delete();
         }
-    }
+    }*/
 }
