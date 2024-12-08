@@ -38,27 +38,27 @@ DB_DATABASE=insideout_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
- - Generate an App Key with this command
+ - Generate an App Key with this command 
 ```
-php artisan key:generate
+php artisan key:generate 
 ```
-- Execute migrations
+- Execute migrations  
 ```
 php artisan migrate:fresh
 php artisan migrate:fresh --seed
 ```
-- How to run the Laravel server
+- How to run the Laravel server  
 ```
 php artisan serve
 ```
 
-- If you want to run all this in development environment run the following command
+- If you want to run all this in development environment run the following command  
 ```
 npm run dev
 ```
 
     
-## API Reference
+## API Reference offers
 
 #### Get all items
 
@@ -90,11 +90,47 @@ Method: PUT
 URL: /offers/{id}
 Code: 200 OK
 
+### Api Reference Feedback
+- This API allows you to manage news related to specific offers. Available operations include listing, creating, displaying, updating and deleting news items.
+
+### List News of an Offer
+
+Method: GET
+Path: /offers/{offerId}/news
+
+### Create a New Notice for an Offer
+Método: POST
+Ruta: /offers/{offerId}/news
+
+### Show a Specific News
+
+Method: GET
+Path: /offers/{offerId}/news/{newsID}
+
+### Update a Specific News Item
+
+Method: PUT
+Path: /offers/{offerId}/news/{newsID}
+
+### Delete a Specific News Item
+
+Method: DELETE
+Path: /offers/{offerId}/news/{newsId}
+
+
+
 ### Common Errors
 
 400 Bad Request: The request could not be processed due to invalid data.
 404 Not Found: The offer with the specified ID was not found.
 500 Internal Server Error: A server error occurred.
+
+### Additional Notes
+
+Be sure to properly handle errors and validations in the FeedbackController.
+Consider implementing authentication and authorisation if necessary to protect these routes.
+
+
 ## 🏃‍♂️🧪 Running Tests
 
 To run tests, run the following command
