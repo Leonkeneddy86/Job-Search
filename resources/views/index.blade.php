@@ -19,7 +19,13 @@
           <td>{{ $offer->offer }}</td>
           <td>{{ $offer->description }}</td>
           <td>{{ $offer->company }}</td>
-          <td>{{ $offer->status }}</td>
+          <td>
+          @if ($offer->status===1)
+            Activa 🔛
+          @else
+            Inactiva ⛔
+          @endif
+          </td>
           <td>{{ $offer->created_at }}</td>
         </tr>
       @endforeach
