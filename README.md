@@ -6,7 +6,9 @@ I decided to create a program to keep track of job offers, with the type of offe
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+<img width="960" alt="Captura de pantalla 2024-12-08 195750" src="https://github.com/user-attachments/assets/070eac9e-1483-40fe-8af5-4c6c7a3e2c06">
+
 
 
 ## ▶️💻 Installation
