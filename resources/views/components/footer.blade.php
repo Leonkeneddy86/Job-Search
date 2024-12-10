@@ -6,11 +6,8 @@
         <a class="GitHub" href="https://github.com/Leonkeneddy86">GitHub</a>
       </button>
       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #8BE9FD;">
-        <a class="Linkedin" href="https://www.linkedin.com/in/leonkeneddy86/
-
-">Linkedin</a>
+        <a class="Linkedin" href="https://www.linkedin.com/in/leonkeneddy86/">Linkedin</a>
     </div>
-
     
     <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2024 Copyright:
