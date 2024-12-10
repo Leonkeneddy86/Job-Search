@@ -141,6 +141,8 @@ To run tests, run the following command
   php artisan test
 
 ```
+## Diagrams made
+<img width="960" alt="Captura de pantalla 2024-12-10 132314" src="https://github.com/user-attachments/assets/2b33d588-29b7-45e2-972f-a41301ec55d5">
 
 ## Contributing
 
