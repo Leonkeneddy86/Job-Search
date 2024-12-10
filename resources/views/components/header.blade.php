@@ -1,3 +1,3 @@
 <header>
-    <h1>JOB SEARCH</h1>
+    <h1 class="text"> JOB SEARCH</h1>
 </header>
