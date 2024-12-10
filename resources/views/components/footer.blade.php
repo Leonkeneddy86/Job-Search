@@ -1,4 +1,3 @@
-<!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container my-5">
 
   <footer class="text-center text-lg-start" style="background-color: #44475A;">
