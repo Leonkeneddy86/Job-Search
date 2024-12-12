@@ -9,6 +9,7 @@
         <th scope="col">Descripcion</th>
         <th scope="col">Empresa</th>
         <th scope="col">Estado</th>
+        <th>Noticias</th>
         <th scope="col">Fecha</th>
       </tr>
     </thead>
@@ -26,6 +27,7 @@
             Inactiva ⛔
           @endif
           </td>
+          <td><a href="{{route('show',$offer->id)}}">Noticias</a></td>
           <td>{{ $offer->created_at }}</td>
         </tr>
       @endforeach
