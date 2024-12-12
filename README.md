@@ -36,7 +36,7 @@ In DB_CONNECTION will come mysqlite, change it to the bd you use (in this case M
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=insideout_db
+DB_DATABASE=jobs
 DB_USERNAME=root
 DB_PASSWORD=
 ```
