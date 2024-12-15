@@ -64,62 +64,70 @@ npm run dev
 
 #### Get all items
 
-Method: GET
+```Method: GET
 URL: /offers
 Code: 200 OK
+```
 
 #### Get a specific offer
 
-Method: GET
+```Method: GET
 URL: /offers/{id}
 Code: 200 OK
+```
 
 ### Create a new offer
 
-Method: POST
+```Method: POST
 URL: /offers
 Code: 200 OK
+```
 
 ### Remove an offer
 
-Method: DELETE
+```Method: DELETE
 URL: /offers/{id}
 Code: 200 OK
-
+```
 ### Updating an existing offer
 
-Method: PUT
+```Method: PUT
 URL: /offers/{id}
 Code: 200 OK
-
+```
 ### Api Reference Feedback
-- This API allows you to manage news related to specific offers. Available operations include listing, creating, displaying, updating and deleting news items.
+
 
 ### List News of an Offer
 
-Method: GET
-Path: /offers/{offerId}/news
+```Method: GET
+URL: /offers/{offerId}/news
+Code  : 200 OK
+```
 
 ### Create a New Notice for an Offer
-Método: POST
-Ruta: /offers/{offerId}/news
-
+```Method: POST
+URL: /offers/{offerId}/news
+Code  : 200 OK
+```
 ### Show a Specific News
 
-Method: GET
-Path: /offers/{offerId}/news/{newsID}
-
+```Method: GET
+URL: /offers/{offerId}/news/{newsID}
+Code  : 200 OK
+```
 ### Update a Specific News Item
 
-Method: PUT
-Path: /offers/{offerId}/news/{newsID}
-
+```Method: PUT
+URL: /offers/{offerId}/news/{newsID}
+Code  : 200 OK
+```
 ### Delete a Specific News Item
 
-Method: DELETE
-Path: /offers/{offerId}/news/{newsId}
-
-
+```Method: DELETE
+URL: /offers/{offerId}/news/{newsId}
+Code  : 200 OK
+```
 
 ### Common Errors
 
